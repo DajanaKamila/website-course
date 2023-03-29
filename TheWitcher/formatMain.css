@@ -1,0 +1,97 @@
+header {
+  padding: 5px;
+  text-align: center;
+  background: #FFFFFF;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 500px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  margin-top: 5%;
+}
+
+.main{
+  background: url(resources/background2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#buttonMain {
+   border-radius: 12px;
+   font-size: 12px;
+   padding: 10px 24px;
+   background-color: #E0FFFF;
+   border-color: #ADD8E6
+ }
+
+ /* Split the screen in half */
+ .split {
+   height: 100%;
+   width: 50%;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   overflow-x: hidden;
+   padding-top: 20px;
+ }
+
+ /* Control the left side */
+ .left {
+   left: 0;
+   background-color: #90ee90;
+ }
+
+ /* Control the right side */
+ .right {
+   right: 0;
+   background-color: #dc143c;
+ }
+
+/* If you want the content centered horizontally and vertically */
+.centeredChoice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centeredChoice img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  object-fit: fill;
+}
+
+buttonChoice {
+    background-image: url('resources/fire.jpg');
+    background-size: cover;
+        width: 200px;
+        height:200px;
+}
+
+#buttonFire {
+    background-image: url('resources/fire.jpg');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #B22222;
+    padding: 10px 24px;
+}
+
+#buttonLeaf {
+    background-image: url('resources/leaf.jpg');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #228B22;
+    padding: 10px 24px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="advanced">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <title> The Witcher </title>
+  <link rel="stylesheet" href="formatAdvanced.css">
+</head>
+
+<body>
+
+<header>
+  <h2><b> Gratuluję wybitnego gustu, wiedźmiński druhu!</b></h2>
+</header>
+
+<div id ="mark">
+  <p><b>Na ile oceniasz serię o Wiedźminie?</b> </p>
+  <button class="firstAnswer" onmouseover="removeFirstAnswers()">1 - Miernie</button>
+  <button class="secondAnswer" onmouseover="removeSecondAnswers()">2 - Słabo</button>
+  <button class="thirdAnswer" onmouseover="removeThirdAnswers()">3 - OK</button>
+  <button class="wrongAnswerFour" onmouseover="removeFourthAnswers()">4 - Bardzo dobrze!</button>
+  <button class="correctAnswer" onclick="greetings()">5 - Grosza daj Wiedźminowi!</button>
+</div>
+
+<script>
+  async function removeFirstAnswers() {
+     document.querySelectorAll("#mark .firstAnswer").forEach((e) => e.remove());
+  }
+
+  function removeSecondAnswers() {
+     document.querySelectorAll("#mark .secondAnswer").forEach((e) => e.remove());
+  }
+
+   function removeThirdAnswers() {
+     document.querySelectorAll("#mark .thirdAnswer").forEach((e) => e.remove());
+  }
+
+   function removeFourthAnswers() {
+     document.querySelectorAll("#mark .wrongAnswerFour").forEach((e) => e.remove());
+  }
+
+  function greetings(){
+      alert("Sakiewką potrząśnij!");
+  }
+</script>
+
+</body>
+
+</html>
